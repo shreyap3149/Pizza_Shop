@@ -10,5 +10,6 @@ public class CustomerId implements Serializable {
     public CustomerId(String phone_number,String zipcode){
         this.phone_number = phone_number;
         this.zipcode = zipcode;
+        
     }
 }
