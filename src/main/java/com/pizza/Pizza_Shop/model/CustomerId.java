@@ -12,4 +12,6 @@ public class CustomerId implements Serializable {
         this.zipcode = zipcode;
         
     }
+
+    
 }
