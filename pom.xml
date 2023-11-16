@@ -9,7 +9,7 @@
        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>group</groupId>
-    <artifactId>KKPizza</artifactId>
+    <artifactId>Pizza_Shop</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>KKPizza</name>
     <description>Demo project for Spring Boot</description>
@@ -43,6 +43,13 @@
           <artifactId>spring-boot-starter-test</artifactId>
           <scope>test</scope>
        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>2.2</version>
+        </dependency>
+
     </dependencies>
 
     <build>
