@@ -11,4 +11,6 @@ public class CustomerId implements Serializable {
         this.phone_number = phone_number;
         this.zipcode = zipcode;
     }
+
+    
 }

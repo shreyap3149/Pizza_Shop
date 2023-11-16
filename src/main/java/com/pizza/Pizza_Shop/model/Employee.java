@@ -1,15 +1,15 @@
 package com.pizza.Pizza_Shop.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import java.util.Date;
-import java.time.LocalTime;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "Employee")
 public class Employee {
+    @Id
     private int employee_id;
+    @Column(name="username")
     private String username;
+    @Column(name="password")
     private String password;
 
     public Employee(int employee_id, String username, String password) {
