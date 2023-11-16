@@ -1,19 +1,25 @@
 package com.pizza.Pizza_Shop.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 import java.time.LocalTime;
 
 @Entity
 @Table(name="CustomerOrder")
+@IdClass(CustomerOrderID.class)
 public class CustomerOrder{
-   private long order_number;
-   private String product_name;
-   private int quantity;
-   private float total_price;
-   private Date dates;
-   private LocalTime time;
+    @Id
+    private long order_number;
+    @Column(name="product_name")
+    private String product_name;
+    @Column(name="quantity")
+    private int quantity;
+    @Id
+    private float total_price;
+    @Id
+    private Date dates;
+    @Id
+    private LocalTime time;
 
 
    public CustomerOrder(long order_number, String product_name, int quantity, float total_price, Date dates, LocalTime time){

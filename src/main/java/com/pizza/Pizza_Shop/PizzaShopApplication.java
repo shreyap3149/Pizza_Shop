@@ -1,12 +1,15 @@
 package com.pizza.Pizza_Shop;
 
+import java.sql.*;
 import java.util.List;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @SpringBootApplication
 @RestController
+
 public class PizzaShopApplication {
 
 	public static void main(String[] args) {
@@ -20,20 +23,15 @@ public class PizzaShopApplication {
 		}
 	}
 
-	public List<Employee> db = List.of(new Employee("1", "1232312", "143243242"));
+	// public List<Employee> db = List.of(new Employee("1", "1232312", "143243242"));
 
-	@GetMapping("/")
-	public String hello(){
-		return "HI";
-	}
-
-
-	@GetMapping("/employees")
-	public List<Employee> get(){
-		return db;
+	// @GetMapping("/")
+	// public String hello(){
+	// 	return "HI";
+	// }
 	
 
-	}
+	// }
 
 	
 }
