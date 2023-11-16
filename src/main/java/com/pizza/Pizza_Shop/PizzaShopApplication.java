@@ -5,10 +5,11 @@ import java.util.List;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.RestController;
+
 
 @SpringBootApplication
 @RestController
+
 public class PizzaShopApplication {
 
 	public static void main(String[] args) {
@@ -28,11 +29,6 @@ public class PizzaShopApplication {
 	// public String hello(){
 	// 	return "HI";
 	// }
-
-
-	// @GetMapping("/employees")
-	// public List<Employee> get(){
-	// 	return db;
 	
 
 	// }
